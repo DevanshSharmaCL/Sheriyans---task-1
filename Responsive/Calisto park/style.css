@@ -1,0 +1,410 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+:root{
+
+    --primary:#111111;
+    --secondary:#6d6d6d;
+    --white:#ffffff;
+    --bg:#f8f8f8;
+
+    --heading:'Cormorant Garamond',serif;
+    --body:'Poppins',sans-serif;
+
+}
+
+.container{
+    width:min(90%,1200px);
+    margin:auto;
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:url("hero.png");
+    background-size:110%;
+    background-position:center 20%;
+    background-repeat:no-repeat;
+
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.18);
+    pointer-events: none;
+}
+
+.navbar{
+    position:relative;
+    z-index:10;
+    padding-top:40px;
+}
+
+.nav-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+}
+
+.nav-links a{
+    display: inline-block;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-200px);
+}
+
+.hero-content h1{
+    color: white;
+    font-family: var(--heading);
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.about{
+    padding: 95px 0 90px;      
+    background: #fff;
+}
+
+.about .container{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2{
+    font-family: var(--heading);
+    font-size: 2rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 28px;       
+}
+
+.about p{
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #111;
+}
+
+.about a{
+    display: inline-block;
+    margin-top: 60px;
+    font-family: var(--heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #111;
+}
+
+.products{
+    padding: 90px 0 40px;
+    background: #fff;
+}
+
+.products .container{
+    border-top: 5px solid #8a8a8a;
+    padding-top: 70px;
+}
+
+.products h2{
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+.product-grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.card{
+    flex: 1;
+    text-align: center;
+}
+
+.card img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 18px;
+    font-family: var(--heading);
+    font-size: 1rem;
+    font-weight: 520;
+}
+
+.card p{
+    margin-top: 8px;
+    font-family: var(--heading);
+    font-size: 1rem;
+}
+
+.shop-btn{
+    display: block;
+    width: fit-content;
+    margin: 90px auto 0;
+    padding: 5px 10px;
+    border: 1.2px solid #111;
+    background: transparent;
+    color: #111;
+    font-family: var(--body);
+    font-size: .9rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.newsletter .container{
+    border-top: 5px solid #8a8a8a;
+    padding-top: 130px;
+    margin: 0px auto 0;
+}
+
+.newsletter{
+    padding:  40px 0 120px;
+    text-align: center;
+    background: #fff;
+}
+
+.newsletter h2{
+    font-family: var(--heading);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.newsletter input{
+    width: 650px;
+    height: 45px;
+    padding: 0 18px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter button{
+    width: 120px;
+    height: 45px;
+    border: 1.5px solid #918e8e;
+    background:#e8e6e6;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+footer{
+    background:#03181b;
+    color:#fff;
+    padding:100px 0 100px;
+}
+
+.footer-container{
+    width: min(95%,1200px);
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* First column */
+.footer-links:nth-child(1){
+    margin-left: -90px;
+    margin-top: -25px;
+}
+
+.footer-links:nth-child(2){
+    margin-left: 650px;
+    margin-top: -25px;
+}
+
+.footer-links:nth-child(3){
+    margin-left: 250px;
+    margin-top: -25px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.footer-links a{
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: #fff;
+    font-family: var(--heading);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1.5px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after{
+    width: 100%;
+}
+
+.copyright{
+    width:min(90%,1200px);
+    margin:120px auto 0;
+    text-align:right;
+    padding-right: 100px;
+    font-family:var(--heading);
+    font-size:1rem;
+    color:#fff
+}
+
+@media (max-width: 768px) {
+
+    .container{
+        width:90%;
+    }
+
+    .hero{
+        background-size:cover;
+        background-position:center;
+        height:100vh;
+    }
+
+    .navbar{
+        padding-top:25px;
+    }
+
+    .nav-links{
+        gap:25px;
+        flex-wrap:wrap;
+    }
+
+    .hero-content{
+        transform:none;
+        height:85vh;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+        letter-spacing:2px;
+        padding:0 20px;
+    }
+
+    .about{
+        padding:70px 20px;
+    }
+
+    .about p{
+        max-width:100%;
+    }
+
+    .product-grid{
+        flex-direction:column;
+        align-items:center;
+        gap:50px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .card img{
+        width:100%;
+        height:auto;
+    }
+
+    .newsletter .container{
+        padding-top:70px;
+    }
+
+    .newsletter form{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .newsletter input,
+    .newsletter button{
+        width:100%;
+        max-width:350px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        align-items:center;
+        gap:40px;
+    }
+
+    .footer-links:nth-child(1),
+    .footer-links:nth-child(2),
+    .footer-links:nth-child(3){
+        margin:0;
+    }
+
+    .copyright{
+        text-align:center;
+        padding-right:0;
+    }
+}

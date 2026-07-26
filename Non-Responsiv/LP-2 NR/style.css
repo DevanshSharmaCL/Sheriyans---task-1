@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px ;
+}
+
+nav .pages{
+    display: flex;
+    gap: 30px;
+}
+
+
+.pages a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+/* =================================================================== */
+/* ==============section-1================== */
+
+.section-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section-1 img{
+    height: 800px;
+    width: auto;
+}
+
+.heading{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    display: flex;
+    flex-direction: column;  
+    gap: 10px;
+}
+.heading h2{
+    font-size: 40px;
+    font-weight: 200;
+}
+.heading .middle h1{
+    font-size: 110px;
+}
+.heading .middle p{
+    font-weight: 600;
+}
+
+.heading .getstr{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.heading .getstr button{
+    padding: 20px 30px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.heading .getstr a{
+    color: white;
+}
+
+
+/* =================================================================== */
+/* ==============section-2================== */
+
+
+.section-2{
+    margin: 50px 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 0 80px 0;
+}
+
+.section-2 .journey{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section-2 .journey h1{
+    font-weight:bolder;
+}
+
+.section-2 .journey p{
+    margin-right: 500px;
+    font-size: 18px;
+}
+
+.section-2 .inspired{
+    display: flex;
+}
+.section-2 .inspired i{
+    font-size: 40px;
+}
+
+.section-2 .inspired h4{
+    font-weight: bolder;
+}
+
+.section-2 .inspired .inspired-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 30px;
+}
+
+
+
+.section-3 {
+    padding: 90px 150px 200px 90px;
+    background-color: grey;
+}
+
+.section-3 .contianer{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 150px;
+    
+}
+
+.contianer .left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contianer .left .leftContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.contianer .left .leftContainer .left1{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contianer .left .leftContainer .left2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.right {
+}
+
+.right .card{
+    background-color: white;
+    /* border: 2px solid grey; */
+    width: 380px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card i{
+    font-size: 80px;
+}
+
+.card h1{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.card p{
+    font-size:14px ;
+}
+
+.card form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card form ::placeholder{
+    padding-left: 10px;
+}
+.card form input{
+    width: 100%;
+    height: 40px;
+}
+
+.card button{
+    font-size: 16px;
+    height: 50px;
+    width: 180px;
+    color: white;
+    border: none;
+    background-color: black;
+}
+
+
+
+footer {
+    width: 100%;
+    background: white;
+    padding: 90px 80px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+/* LEFT */
+
+.footer-left {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo i {
+    font-size: 58px;
+    color: black;
+}
+
+.footer-logo h2 {
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.copyright {
+    color: black;
+    font-size: 12px;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-believe {
+    margin-bottom: 70px;
+}
+
+.footer-believe h3 {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-believe p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.footer-believe span {
+    font-weight: 400;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    color: black;
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 16px;
+    font-size: 16px;
+    transition: .3s;
+}
+.footer-column a:hover {
+    opacity: .7;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 90px;
+}
+
+.footer-bottom-links a {
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+-+
+98+
